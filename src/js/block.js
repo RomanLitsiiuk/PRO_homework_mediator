@@ -1,7 +1,6 @@
 var Block = function (mediator, rootElement) {
   this.rootElement = rootElement;
   this.mediator = mediator;
-  this.name = name;
 };
 
 Block.classNames = {
