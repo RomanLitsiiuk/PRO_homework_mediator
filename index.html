@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BadMediator</title>
+  <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
+  <script src="src/js/block.js" defer></script>
+  <script src="src/js/main.js" defer></script>
+</head>
+<body>
+  <div class="Container">
+    <div class="MarkupBlock">
+      <div class="MarkupBlock-row">
+        <div class="ButtonWrap">
+          <p class="ButtonWrap-button" id="firstButton">Window 1</p>
+        </div>
+        <div class="ActionWrap">
+          <div class="ActionWrap-actionWindow" id="firstAction"></div>
+        </div>
+      </div>
+      <div class="MarkupBlock-row">
+        <div class="ButtonWrap">
+          <p class="ButtonWrap-button" id="secondButton">Window 1</p>
+        </div>
+        <div class="ActionWrap">
+          <div class="ActionWrap-actionWindow" id="secondAction"></div>
+        </div>
+      </div>
+      <div class="MarkupBlock-row">
+        <div class="ButtonWrap">
+          <p class="ButtonWrap-button" id="thirdButton">Window 1</p>
+        </div>
+        <div class="ActionWrap">
+          <div class="ActionWrap-actionWindow" id="thirdAction"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelector('#firstButton').addEventListener('click', function () {
+      block1.grow();
+    });
+    document.querySelector('#secondButton').addEventListener('click', function () {
+      block2.grow();
+    });
+    document.querySelector('#thirdButton').addEventListener('click', function () {
+      block3.grow();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.ActionWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-actionWindow {
+    border: 1px solid salmon;
+    background-color: cyan;
+    width: 20px;
+    height: 10px;
+    transition: width 1s, height 1s;
+
+    &.isActive {
+      width: 240px;
+      height: 140px;
+      transition: width 1s, height 1s;
+    }
+  }
+}
